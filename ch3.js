@@ -41,7 +41,7 @@ window.DECK = window.DECK || [];
             <text x="160" y="75" font-size="13" font-weight="bold" fill="#e11d48" text-anchor="middle">旋轉角 α</text>
           `);
         },
-        caption: '旋轉構造法：等腰三角形繞頂點旋轉底邊頂角，等邊三角形繞頂點旋轉 60°。',
+        caption: '旋轉構造法：等腰三角形繞頂點旋轉底邊頂角，等邊三角形繞頂點旋轉 $60^\\circ$。',
         example: {
           q: '如圖，點 $P$ 是正三角形 $ABC$ 內部一點，$PA = 3$，$PB = 4$，$PC = 5$。將 $\\triangle APB$ 繞點 $A$ 逆時針旋轉 $60^\\circ$ 得到 $\\triangle AP\'C$。求 $\\angle APB$ 的度數。',
           steps: [
@@ -57,7 +57,7 @@ window.DECK = window.DECK || [];
       },
       {
         sec: '23.2', secName: '中心對稱與坐標變換',
-        title: '旋轉 180° 重合為中心對稱；關於原點對稱橫縱坐標全相反',
+        title: '旋轉 $180^\\circ$ 重合為中心對稱；關於原點對稱橫縱坐標全相反',
         points: [
           '<b>中心對稱定義</b>：把一個圖形繞著某一個點旋轉 $180^\\circ$，如果它能夠與另一個圖形重合，那麼稱這兩個圖形成中心對稱。',
           '<b>核心性質</b>：對稱點所連線段都經過對稱中心，而且<b>被對稱中心平分</b>。',

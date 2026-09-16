@@ -351,6 +351,9 @@
   function toggleSidebar() {
     if (window.innerWidth > 1080) app.classList.toggle('toc-collapsed');
     else tocEl.classList.toggle('open');
+    if (!app.classList.contains('toc-collapsed') || tocEl.classList.contains('open')) {
+      typeset(tocEl);
+    }
     // 版面寬度改變 → 重新縮放（延一格等 grid 重排完成）
     requestAnimationFrame(fitSlide);
   }
@@ -358,7 +361,7 @@
   nextBtn.onclick = next;
   $('tocToggle').onclick = toggleSidebar;
   $('homeBtn').onclick = () => { app.classList.add('hidden'); $('cover').classList.remove('hidden'); };
-  $('startBtn').onclick = () => { $('cover').classList.add('hidden'); app.classList.remove('hidden'); fitPen(); render(); };
+  $('startBtn').onclick = () => { $('cover').classList.add('hidden'); app.classList.remove('hidden'); fitPen(); render(); typeset(tocEl); };
 
   /* ================= 授課教具 ================= */
   const canvas = $('penCanvas'), penCtx = canvas.getContext('2d');
@@ -519,6 +522,7 @@
       $('app').classList.remove('hidden');
       fitPen();
       go(m ? +m[1] : 0);
+      typeset(tocEl);
     }
   })();
   // 不自動 render，等按「開始複習」；但若直接想看也可預先 render

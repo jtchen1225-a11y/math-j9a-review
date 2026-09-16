@@ -103,7 +103,7 @@ window.DECK = window.DECK || [];
       },
       {
         sec: '24.3', secName: '弧長、扇形面積與圓錐計算',
-        title: '弧長 l = nπr/180；扇形面積 S = 1/2 lr；圓錐底面周長等於側展扇形弧長',
+        title: '弧長 $l = \\frac{n\\pi r}{180}$；扇形面積 $S = \\frac{1}{2}lr$；圓錐底面周長等於側展扇形弧長',
         points: [
           '<b>弧長公式</b>：$l = \\frac{n \\pi r}{180}$（$n$ 是圓心角度數，$r$ 是半徑）。',
           '<b>扇形面積公式</b>：$S = \\frac{n \\pi r^2}{360} = \\frac{1}{2}lr$（類比三角形面積公式 $\\frac{1}{2} \\times \\text{底} \\times \\text{高}$）。',
