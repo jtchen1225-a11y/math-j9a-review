@@ -130,7 +130,7 @@ const SV = (() => {
         const ac = r.color || '#2563eb';
         return `<div style="width:${r.w || opt.w || '90%'};background:${r.fill || '#fff'};border:1.5px solid ${r.border || '#dce3ee'};border-radius:14px;padding:${r.pad || '11px 16px'};text-align:center;box-shadow:0 4px 14px rgba(30,42,68,.06)">` +
           (r.label ? `<div style="font-size:12px;font-weight:900;letter-spacing:.04em;color:${ac};margin-bottom:3px">${r.label}</div>` : '') +
-          `<div style="font-size:${r.size || 17}px;color:#172033">\\(${r.tex}\\)</div>` +
+          `<div style="font-size:${r.size || 17}px;color:#172033">$$${r.tex}$$</div>` +
           (r.note ? `<div style="font-size:12.5px;color:#657187;margin-top:4px">${r.note}</div>` : '') +
           `</div>`;
       }).join('') + `</div>`;

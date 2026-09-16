@@ -83,7 +83,7 @@ window.DECK = window.DECK || [];
             <text x="250" y="200" font-size="12" font-weight="bold" fill="#e11d48">看該 x 對應 y 的正負</text>
           `);
         },
-        caption: '中考高頻壓軸選填：觀察圖象上特定點 \\(x = \\pm 1, \\pm 2\\) 的位置，直接判斷複合代數式正負。',
+        caption: '高頻壓軸選填：觀察圖象上特定點 \\(x = \\pm 1, \\pm 2\\) 的位置，直接判斷複合代數式正負。',
         example: {
           q: '二次函數 $y = ax^2 + bx + c$ 圖象如圖，開口向上，對稱軸為直線 $x = 1$，與 $y$ 軸交於負半軸。判斷下列結論的正誤：(1) $abc > 0$；(2) $b^2 - 4ac > 0$。',
           steps: [
